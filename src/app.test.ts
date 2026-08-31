@@ -89,6 +89,7 @@ describe("ops routes", () => {
     });
     const response = await request(app).get("/leaderboard?period=week");
     assert.equal(response.status, 200);
+    assert.match(response.text, /The Button Game - Leaderboard/);
     assert.match(response.text, /Larry Lemon/);
     assert.match(response.text, /Most Uniques/);
     assert.match(response.text, /This week/);

@@ -263,7 +263,7 @@ export function leaderboardPage(result: LeaderboardResult, preview: boolean): st
 
   return layout(
     `Leaderboard · ${PERIOD_LABELS[result.period]}`,
-    `<p class="kicker">Massive Exchange · RT</p>
+    `<p class="kicker">The Button Game - Leaderboard</p>
      <h1>Scan leaderboard</h1>
      <p>Who is driving the most unique eyes. Ranked by unique scans; raw hits are shown for heat. Names are pseudonyms.</p>
      ${previewNote}
