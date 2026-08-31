@@ -1,0 +1,30 @@
+{
+  "name": "massive-rt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HTTP traffic router for Massive Exchange user links (/u/:id)",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc --noEmit",
+    "test": "tsx --test src/*.test.ts",
+    "rollup": "tsx src/rollup-cli.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.3.0",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.2.2",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
